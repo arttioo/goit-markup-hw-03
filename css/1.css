@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.outer-box {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  padding-top: 30px;
+  background-color: palevioletred;}
+
+.outer-box-two {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+  margin-top: 100px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.inner-box-two {
+  width: 100px;
+  height: 100px;
+  
+  background-color: palevioletred;}
