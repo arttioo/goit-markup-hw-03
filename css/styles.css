@@ -17,7 +17,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p,
+ul {
   margin: 0;
 }
 
@@ -64,6 +66,9 @@ img {
   /* outline: red dashed 1px; */
 }
 /* -----------HEADER------------- */
+.header {
+  border-bottom: 1px solid #EEEEEE;
+}
 
 .main-nav,
 .header-nav,
@@ -93,8 +98,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-studio {
   font-family: 'Raleway', sans-serif;
@@ -104,8 +109,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--black);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-nav .link:hover,
@@ -154,21 +159,21 @@ img {
   padding-bottom: 32px;
 }
 
-.main-nav{
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #EEEEEE;
-}
+
+  
+
 
 /* -------HERO------- */
 
 .hero {
   background-color: var(--background-dark);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  padding-top: 200px;
+  
   margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
@@ -194,13 +199,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  margin-bottom: 200px;
+  
 }
 
 /* ------Features------- */
 
 .feature {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-title {
@@ -216,7 +222,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  width: 270px;
   color: var(--additional-text);
 }
 
@@ -228,9 +233,11 @@ img {
   margin-left: 30px;
 }
 
+.feature-list .item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
 /* ----What we do------ */
 .we-do {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-title {
@@ -272,6 +279,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-profession {
@@ -281,6 +289,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--additional-text);
+  
 }
 
 .team-list {
@@ -303,30 +312,38 @@ img {
 
 /* --------Portfolio--------- */
 
+.portfolio {
+  padding-top: 94px;
+}
 .portfolio-filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.portfolio .item {
+.portfolio-filter .item {
   margin-right: 8px;
-  
 }
 
+.portfolio-filter .item:last-child {
+  margin-right: 0;
+}
+
+.portfolio-filter .current-btn {
+  color: var(--white);
+  background-color: var(--accent-color);
+}
 .port-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   background: var(--background-light);
   border: none;
   border-radius: 4px;
-
-  margin-top: 94px;
-  margin-bottom: 50px;
+  
   padding: 6px 22px;
 }
 
@@ -371,17 +388,10 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #EEEEEE;
+  border: 1px solid #EEEEEE;
+  border-top: none;
 
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #EEEEEE;
-
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #EEEEEE;
+  
 }
 
 /* -----------FOOTER-------- */
@@ -398,6 +408,20 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white);
+
+  padding-bottom: 24px;
+}
+
+.logo-web-footer {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  
+  padding-bottom: 24px;
 }
 
 /* -----Address----- */
@@ -413,6 +437,10 @@ img {
   margin-top: 20px;
 }
 
+.address-location:nth-child(3n) {
+  margin-bottom: 0;
+}
+
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--accent-color);
@@ -424,11 +452,14 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white);
+
+  margin-bottom: 9px;
 }
 
 .address {
   font-style: normal;
 }
+
 
 /* цвет основного текста #212121 */
 /* дополнительного текста #757575 */
