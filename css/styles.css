@@ -314,6 +314,7 @@ img {
 
 .portfolio {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio-filter {
   display: flex;
@@ -356,7 +357,7 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+ 
 }
 
 .portfolio-list .item {
@@ -387,11 +388,9 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-  
+  padding-right: 24px;
   border: 1px solid #EEEEEE;
   border-top: none;
-
-  
 }
 
 /* -----------FOOTER-------- */
